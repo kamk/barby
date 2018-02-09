@@ -14,21 +14,10 @@ Gem::Specification.new do |s|
   s.rubyforge_project = "barby"
 
   s.has_rdoc          = true
-  s.extra_rdoc_files  = ["README"]
+  s.extra_rdoc_files  = ["README.md"]
 
-  s.files             = Dir['CHANGELOG', 'README', 'LICENSE', 'lib/**/*', 'vendor/**/*', 'bin/*']
+  s.files             = Dir['CHANGELOG', 'README.md', 'LICENSE', 'lib/**/*', 'vendor/**/*', 'bin/*']
   #s.executables       = ['barby'] #WIP, doesn't really work that well
   s.require_paths     = ["lib"]
-
-  s.post_install_message = <<-EOS
-
-*** NEW REQUIRE POLICY ***"
-Barby no longer require all barcode symbologies by default. You'll have
-to require the ones you need. For example, if you need EAN-13,
-require 'barby/barcode/ean_13'; For a full list of symbologies and their
-filenames, see README.
-***
-
-  EOS
 
 end
